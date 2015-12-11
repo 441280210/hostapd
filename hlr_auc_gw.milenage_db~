@@ -1,0 +1,12 @@
+# Parameters for Milenage (Example algorithms for AKA).
+# These values can be used for both UMTS (EAP-AKA) and GSM (EAP-SIM)
+# authentication. In case of GSM/EAP-SIM, AMF and SQN values are not used, but
+# dummy values will need to be included in this file.
+
+# format: IMSI Ki OPc AMF SQN
+
+# 3GPP TS 35.208 v6.0.0 4.3.20 Test Set 20 (used by some test USIM cards)
+#232010000000000 90dca4eda45b53cf0f12d7c9c3bc6a89 #cb9cccc4b9258e6dca4760379fb82581 61df 000000000000
+
+# GEM Xplore 3G from GEMPLUS (USIM test card)
+#001010123456789 00112233445566778899AABBCCDDEEFF #01020304050607080910111213141516 ffff 000000004000

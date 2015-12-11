@@ -1,0 +1,33 @@
+# hostapd user database for integrated EAP server
+# This file enables all EAP methods used in WFA testing:
+# EAP-TLS, EAP-TTLS/MSCHAPv2, PEAPv0/EAP-MSCHAPv2, PEAPv1/EAP-GTC, EAP-SIM,
+# EAP-AKA, EAP-FAST
+
+# Each line must contain identity, EAP method, and optional password
+# separated with whitespace (space or tab). Identity and password must be
+# double quoted ("user").
+
+# Phase 1 users
+
+# EAP-SIM/AKA prefixes
+"0"*		AKA,SIM
+"1"*		SIM,AKA
+"2"*		AKA,SIM
+"3"*		SIM,AKA
+"4"*		AKA,SIM
+"5"*		SIM,AKA
+
+# Wildcard to allow anything to be used in phase 1
+*		FAST,TLS,TTLS,PEAP,AKA,SIM
+
+# Phase 2 (tunnelled within EAP-PEAP/TTLS/FAST) users
+"user"	MSCHAPV2,MD5,GTC,TTLS-MSCHAPV2	"password"	[2]
+"wifi-user"	MSCHAPV2,MD5,GTC,TTLS-MSCHAPV2	"test%11"	[2]
+
+# Allow EAP-SIM and EAP-AKA inside tunnel
+"0"*		AKA	[2]
+"1"*		SIM	[2]
+"2"*		AKA	[2]
+"3"*		SIM	[2]
+"4"*		AKA	[2]
+"5"*		SIM	[2]

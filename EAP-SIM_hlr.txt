@@ -1,0 +1,10 @@
+Listening for requests on /tmp/hlr_auc_gw.sock
+Signal 2 - terminate
+Listening for requests on /tmp/hlr_auc_gw.sock
+Received: SIM-REQ-AUTH 404100222461247 3
+No GSM triplets found for 404100222461247
+Send: SIM-RESP-AUTH 404100222461247 FAILURE
+Received: SIM-REQ-AUTH 404100222461247 3
+No GSM triplets found for 404100222461247
+Send: SIM-RESP-AUTH 404100222461247 FAILURE
+Signal 2 - terminate
